@@ -129,11 +129,12 @@ main {
   list-style: none;
   padding: 0;
   margin: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-footer__link {
-  display: block;
   margin: 1rem 0;
 }
 
@@ -162,9 +163,12 @@ main {
   width: 90%;
   height: 100%;
   list-style: none;
-  margin: 10% auto;
+  margin: 0% auto;
   padding: 0;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .mobile-nav__item {
@@ -212,8 +216,12 @@ main {
     display: flex;
   }
 
+  .main-footer__links {
+    flex-direction: row;
+    justify-content: center;
+  }
+
   .main-footer__link {
-    display: inline-block;
     margin: 0 1rem;
   }
 }
